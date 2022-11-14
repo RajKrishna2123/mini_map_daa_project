@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DAA PROJECT</title>
+    <link rel="stylesheet" "type=text/css" href="{% static 'css/styles-merged.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.min.css'%}">
+    <link rel="stylesheet" href="{% static 'fonts/icomoon/style.css' %}">
+
+    <!--[if lt IE 9]>
+      <script src="{% static 'js/vendor/html5shiv.min.js' %} "></script>
+      <script src="{% static 'js/vendor/respond.min.js' %}"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+
+    <nav class="navbar navbar-default probootstrap-navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://localhost:8000/index/" ><img src="{% static 'img/dope.png'%}"></a>
+
+        </div>
+
+        <div id="navbar-collapse" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+
+            <li><a href="#" data-nav-section="features">Test website for real world application of dijkstra algorithm </a></li>
+
+          </ul>
+        </div>
+      </div>
+
+    </nav>
+
+    <section class="probootstrap-hero prohttp://localhost/probootstrap/frame/#featuresbootstrap-slant" style="background-image:url({% static 'img/PIP.jpg'%});" data-section="home" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row intro-text">
+          <div class="col-md-8 col-md-offset-2 text-center">            
+            <h1 class="probootstrap-heading probootstrap-animate">Real life application on Dijkstra algorithm to find shortest path 
+                                                                  to reach destination using real life maps </h1>
+                                                                  <h3>
+                                                                  Here, I will be using my home town map i.e. Patna the capital of 
+                                                                  Bihar. The application will tell about optimum path to reach 
+                                                                  destination in this project our destinations are all educational 
+                                                                  institute
+                                                                  Interconnecting major routes for these educational institute also being 
+                                                                  less occupied better width (lane) reducing time taken to cover up 
+                                                                  I have neglected traffic conditions and considered speed cap in city 
+                                                                  as usual to 40 km/hour (considered constant)
+                                                                  Here, this project will target efficient way to reach schools university 
+                                                                  on time from various start points being same as the institution
+                                                                  A general Graph creation of the given details along with the distance 
+                                                                  required</h3>           
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="{% static 'js/scripts.min.js'%}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+
+  </body>
+</html>
